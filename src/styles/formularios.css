@@ -1,0 +1,451 @@
+/*====================FORMULÁRIOS - Campos de entrada, labels e controles====================*/
+
+.campo-input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #fde68a;
+  background: #fefde8;
+  font-size: 17px;
+  outline: none;
+  transition: border-color 0.2s;
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+}
+.campo-input:focus {
+  border-color: #4caf50;
+}
+input[type="file"].campo-input {
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+input[type="file"].campo-input::file-selector-button {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 7px 0 0 7px;
+  padding: 11px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+  margin-right: 12px;
+}
+input[type="file"].campo-input::file-selector-button:hover {
+  background: #1b5e20;
+}
+.area-txt {
+  resize: vertical;
+  min-height: 110px;
+}
+.btn-enviar {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.btn-enviar:hover {
+  background: #f57c00;
+}
+.btn-enviar img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.campo label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+.campo.full {
+  grid-column: 1/-1;
+}
+
+/*====================FORMULÁRIOS - Inputs com tamanhos específicos====================*/
+
+/* Input que se expande (flex:1) na linha horizontal */
+.input-flex {
+  flex: 1;
+}
+
+/* Input de data com largura fixa */
+.input-data {
+  width: 130px;
+  flex: none;
+}
+
+/* Label padrão dentro de formulários de modal/admin */
+.form-label {
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Label de campo de sexo */
+.label-sexo {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Wrapper de upload de arquivo com gap */
+.campo-foto-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Input de arquivo com padding reduzido */
+.input-arquivo {
+  padding: 8px;
+}
+
+/* Preview de avatar circular */
+.preview-avatar {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+/* Preview de banner/capa da ONG */
+.preview-banner {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* Área de texto com altura mínima reduzida */
+.area-txt-curta {
+  min-height: 80px;
+}
+
+/* Área de texto com altura mínima extra pequena */
+.area-txt-mini {
+  min-height: 60px;
+}
+
+/* Área de texto grande para conteúdo longo */
+.area-txt-grande {
+  min-height: 150px;
+}
+
+/* Lista de tags selecionáveis no formulário */
+.lista-tags-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Botão de tag selecionável */
+.btn-tag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1.5px solid #fde68a;
+  background: #fefde8;
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.2s;
+}
+.btn-tag.ativo {
+  border-color: #4caf50;
+  background: #e8f5e9;
+}
+
+/* Grupo de campos em linha (flex horizontal) */
+.grupo-campos {
+  display: flex;
+  gap: 12px;
+}
+.grupo-campos-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Label de upload de imagem */
+.label-upload {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Input de arquivo oculto (acionado por botão) */
+.input-oculto {
+  display: none;
+}
+
+/* Select com largura total */
+.seletor-full {
+  width: 100%;
+}
+
+/* Label para campo de neurodivergência */
+.label-neuro {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Toggle de neurodivergente com margem inferior */
+.toggle-neuro-campo {
+  margin-bottom: 10px;
+}
+
+/* Texto dentro do toggle */
+.toggle-texto {
+  font-weight: 500;
+}
+
+/* Caixa de erro genérica */
+.caixa-erro {
+  background: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #c62828;
+}
+
+/* Container com position relative para campos bloqueados */
+.campo-relativo {
+  position: relative;
+}
+
+/* Aviso/dica abaixo de campo desabilitado */
+.aviso-campo {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.campo-input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #fde68a;
+  background: #fefde8;
+  font-size: 17px;
+  outline: none;
+  transition: border-color 0.2s;
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+}
+.campo-input:focus {
+  border-color: #4caf50;
+}
+input[type="file"].campo-input {
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+input[type="file"].campo-input::file-selector-button {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 7px 0 0 7px;
+  padding: 11px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+  margin-right: 12px;
+}
+input[type="file"].campo-input::file-selector-button:hover {
+  background: #1b5e20;
+}
+.area-txt {
+  resize: vertical;
+  min-height: 110px;
+}
+.btn-enviar {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.btn-enviar:hover {
+  background: #f57c00;
+}
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.campo label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+.campo.full {
+  grid-column: 1/-1;
+}
+
+/*====================LABELS E CONTROLES DE FORMULÁRIO====================*/
+
+/* Label padrão dentro de formulários de modal/admin */
+.form-label {
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Wrapper de upload de arquivo com gap */
+.campo-foto-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Input de arquivo com padding reduzido */
+.input-arquivo {
+  padding: 8px;
+}
+
+/* Preview de avatar circular */
+.preview-avatar {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+/* Preview de banner/capa da ONG */
+.preview-banner {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* Área de texto com altura mínima reduzida */
+.area-txt-curta {
+  min-height: 80px;
+}
+
+/* Lista de tags selecionáveis no formulário */
+.lista-tags-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Botão de tag selecionável */
+.btn-tag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1.5px solid #fde68a;
+  background: #fefde8;
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.2s;
+}
+.btn-tag.ativo {
+  border-color: #4caf50;
+  background: #e8f5e9;
+}
+
+/* Grupo de campos em linha (flex horizontal) */
+.grupo-campos {
+  display: flex;
+  gap: 12px;
+}
+.grupo-campos-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Label de upload de imagem */
+.label-upload {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Input de arquivo oculto (acionado por botão) */
+.input-oculto {
+  display: none;
+}
+
+/* Select com largura total */
+.seletor-full {
+  width: 100%;
+}
+
+/* Label para campo de neurodivergência */
+.label-neuro {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Toggle de neurodivergente com margem inferior */
+.toggle-neuro-campo {
+  margin-bottom: 10px;
+}
+
+/* Texto dentro do toggle */
+.toggle-texto {
+  font-weight: 500;
+}
+
+/* Caixa de erro genérica */
+.caixa-erro {
+  background: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #c62828;
+}

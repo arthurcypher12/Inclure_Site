@@ -1,0 +1,107 @@
+/*====================FOOTER - Rodapé da aplicação====================*/
+
+.rodape {
+  background: #1a2e1a;
+  color: #b8d4b8;
+  margin-top: 40px;
+  padding: 48px 24px 24px;
+}
+.rodape-int {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+.marca-rod .logo-rod {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.marca-rod .logo-rod img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+.marca-rod p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #8aab8a;
+}
+.redes-rod {
+  display: flex;
+  gap: 10px;
+}
+.redes-rod a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redes-rod a:hover {
+  opacity: 0.8;
+}
+.redes-rod img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.col-rod h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e8f0e8;
+  margin-bottom: 14px;
+}
+.col-rod ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.col-rod ul li a,
+.col-rod ul li span {
+  font-size: 17px;
+  color: #8aab8a;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.col-rod ul li a:hover,
+.col-rod ul li span:hover {
+  color: #4caf50;
+}
+.itens-rod {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item-rod {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  color: #8aab8a;
+}
+.item-rod img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.rodape-inf {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid #2a3d2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #6a8a6a;
+  flex-wrap: wrap;
+  gap: 8px;
+}

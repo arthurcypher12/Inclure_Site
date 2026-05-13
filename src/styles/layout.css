@@ -1,0 +1,76 @@
+/*====================LAYOUT - Estruturas e utilitários de layout principal====================*/
+
+.principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+}
+.titulo-sec {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+.subtitulo {
+  text-align: center;
+  font-size: 19px;
+  color: #555;
+  margin-bottom: 32px;
+}
+.rotulo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2e7d32;
+  margin: 32px 0 20px;
+}
+.topo {
+  text-align: center;
+  padding: 32px 0 16px;
+}
+.topo h1 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+.topo p {
+  font-size: 19px;
+  color: #666;
+}
+
+/*====================VARIAÇÕES DE LAYOUT====================*/
+
+/* Container estreito para páginas admin */
+.principal-estreito {
+  max-width: 900px;
+}
+
+/* Principal centralizado para páginas de erro/404 */
+.principal-centralizado {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+/* Topo sem padding superior (usado no dashboard) */
+.topo-sem-padding {
+  padding-top: 0;
+}
+
+/* Texto de carregamento e estado vazio */
+.texto-carregando {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+.texto-vazio {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+
+/* Seção de voltar (botão centralizado) */
+.secao-voltar {
+  text-align: center;
+  margin-bottom: 32px;
+}

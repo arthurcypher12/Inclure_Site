@@ -1,0 +1,37 @@
+/*====================GLOBAL - Importações centralizadas de todos os estilos====================*/
+/*
+  Este arquivo é o único que deve ser importado nos arquivos React.
+  Ele importa todos os módulos CSS organizados por responsabilidade.
+  Importação em: src/main.jsx → import './styles/global.css'
+*/
+
+/* ===== Fundação ===== */
+@import "./base.css";
+@import "./modo-escuro.css";
+
+/* ===== Componentes de layout compartilhados ===== */
+@import "./navbar.css";
+@import "./footer.css";
+@import "./layout.css";
+
+/* ===== Elementos de UI reutilizáveis ===== */
+@import "./botoes.css";
+@import "./formularios.css";
+@import "./filtros.css";
+
+/* ===== Páginas ===== */
+@import "./home.css";
+@import "./sobre.css";
+@import "./profissionais.css";
+@import "./modal.css";
+@import "./ongs.css";
+@import "./neurodivergencias.css";
+@import "./blog.css";
+@import "./auth.css";
+@import "./perfil.css";
+@import "./download.css";
+@import "./recuperacao.css";
+@import "./admin.css";
+
+/* ===== Responsividade (sempre por último) ===== */
+@import "./responsividade.css";

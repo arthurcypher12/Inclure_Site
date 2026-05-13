@@ -1,0 +1,216 @@
+/*====================HOME - Seção de destaque principal====================*/
+
+/* Variações de cor removidas pois os assets são usados diretamente */
+
+/* Ícone de ação admin arredondado */
+.icone-acao-admin {
+  border-radius: 8px;
+}
+
+/* Artigo centralizado (estado vazio/erro) */
+.artigo-centralizado {
+  text-align: center;
+}
+
+.destaque {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 40px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 32px;
+}
+.txt-destaque {
+  flex: 1;
+}
+.txt-destaque h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.txt-destaque h1 span {
+  color: #e8a000;
+}
+.txt-destaque p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.acoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.img-destaque {
+  flex-shrink: 0;
+}
+.img-destaque img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/*====================HOME - Grade de cards de funcionalidades====================*/
+
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.icone-card {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f5e9;
+}
+.icone-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card h3 {
+  font-size: 19px;
+  font-weight: 700;
+}
+.card p {
+  font-size: 17px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/*====================HOME - Seção de download do app====================*/
+
+.baixar-app {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 32px;
+}
+.img-cel {
+  flex-shrink: 0;
+}
+.img-cel img {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+}
+.texto-app {
+  flex: 0 1 auto;
+}
+.texto-app h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+.texto-app p {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.btn-loja {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-loja img {
+  height: 64px;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*====================HOME - Seção de contato====================*/
+
+.contato {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 32px;
+}
+.info-contato h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.info-contato p {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.itens-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.item-cont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+}
+.item-cont img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.tit-redes {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.redes {
+  display: flex;
+  gap: 12px;
+}
+.btn-rede {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-rede img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.btn-rede:hover {
+  opacity: 0.8;
+}

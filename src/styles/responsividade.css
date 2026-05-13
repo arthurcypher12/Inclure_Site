@@ -1,0 +1,164 @@
+/*====================RESPONSIVIDADE - Tablets e desktops médios====================*/
+
+/* Nota: font-size e padding do navbar usam clamp() fluido no navbar.css —
+   sem necessidade de breakpoints fixos intermediários. */
+
+@media (max-width: 860px) {
+  .nav-topo {
+    left: 16px;
+    right: 16px;
+    gap: 12px;
+  }
+  .menu-mob {
+    left: 16px;
+    right: 16px;
+  }
+}
+
+/*====================RESPONSIVIDADE - Tablets====================*/
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 104px;
+  }
+  .nav-topo {
+    gap: 0;
+  }
+  .bloco-user {
+    display: none;
+  }
+  .bloco-nav {
+    display: flex;
+    padding: 0 16px;
+    grid-template-columns: unset;
+  }
+  .links-nav,
+  .area-tema {
+    display: none;
+  }
+  .btn-menu {
+    display: flex;
+    margin-left: auto;
+  }
+  .logo-site img {
+    height: 44px;
+  }
+  .grade-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .destaque {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .img-destaque {
+    display: none;
+  }
+  .baixar-app {
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+  }
+  .btn-loja {
+    justify-content: center;
+  }
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .rodape-int {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  .prof-grade,
+  .ong-grade,
+  .neuro-grade,
+  .blog-grade {
+    grid-template-columns: 1fr;
+  }
+  .neuro-det {
+    grid-template-columns: 1fr;
+  }
+  .equipe {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modal-grade {
+    grid-template-columns: 1fr;
+  }
+  .filtro {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .busca {
+    min-width: unset;
+  }
+  .artigo-banner {
+    height: 180px;
+  }
+  .artigo-tit {
+    font-size: 24px;
+  }
+  .artigo-topo,
+  .artigo-corpo {
+    padding: 20px;
+  }
+  .perfil-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .perfil-campos {
+    grid-template-columns: 1fr;
+  }
+  .campo.full {
+    grid-column: auto;
+  }
+  .req-grade {
+    grid-template-columns: 1fr;
+  }
+  .func-grade {
+    grid-template-columns: 1fr;
+  }
+  .telas-grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .download-hero {
+    flex-direction: column;
+    padding: 36px 28px;
+  }
+  .admin-acoes {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-grade {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 769px) {
+  .menu-mob {
+    display: none !important;
+  }
+}
+
+/*====================RESPONSIVIDADE - Mobile====================*/
+
+@media (max-width: 480px) {
+  .grade-cards {
+    grid-template-columns: 1fr;
+  }
+  .equipe {
+    grid-template-columns: 1fr;
+  }
+  .rodape-int {
+    grid-template-columns: 1fr;
+  }
+  .acesso-linha {
+    flex-direction: column;
+  }
+  .telas-grade {
+    grid-template-columns: 1fr 1fr;
+  }
+  .perfil-acoes {
+    flex-direction: column;
+  }
+}

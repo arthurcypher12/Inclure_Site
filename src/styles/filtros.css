@@ -1,0 +1,87 @@
+/*====================FILTROS - Barra de busca e filtros de listagem====================*/
+
+.filtro {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  flex-wrap: wrap;
+}
+.busca {
+  position: relative;
+  flex: 1;
+  min-width: 180px;
+}
+.busca input {
+  width: 100%;
+  padding: 10px 40px 10px 14px;
+  border: 1.5px solid #fde68a;
+  border-radius: 8px;
+  background: #fefde8;
+  font-size: 17px;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+.busca img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+.seletor {
+  padding: 10px 14px;
+  border: 1.5px solid #fde68a;
+  border-radius: 8px;
+  background: #fefde8;
+  font-size: 17px;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+  min-width: 120px;
+  font-family: inherit;
+}
+.btn-filtrar {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.btn-filtrar:hover {
+  background: #388e3c;
+}
+.btn-limpar {
+  background: #9e9e9e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.btn-limpar:hover {
+  background: #757575;
+}
+.ver-mais {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.oculto {
+  display: none !important;
+}
